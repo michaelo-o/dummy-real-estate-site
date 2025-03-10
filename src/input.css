@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ========== Base Styles ========== */
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+
+    h1,
+    h3 {
+        @apply font-bold;
+    }
+
+    h1 {
+        @apply text-3xl sm:text-5xl;
+    }
+
+    h3 {
+        @apply text-3xl;
+    }
+
+    p {
+        @apply text-xl;
+    }
+}
+
+/* ========== Component Styles ========== */
+@layer components {
+    .navbar {
+        @apply fixed z-20 top-0 bg-white w-full text-black shadow-md m-0 pt-0 flex flex-col sm:flex-row sm:justify-between sm:items-center;
+    }
+
+    .navbar-title {
+        @apply flex justify-center sm:text-left font-bold text-2xl py-1 sm:ml-5;
+    }
+
+    .nav-links {
+        @apply flex justify-between bg-black text-white sm:justify-end gap-4 m-0 p-5 w-full sm:w-1/2;
+    }
+
+    .nav-link {
+        @apply p-1 hover:underline hover:text-gray-300 transition duration-300 active:bg-white active:text-black;
+    }
+
+    .hero-section {
+        @apply relative h-[50vh] sm:h-[70vh] w-full bg-cover bg-center flex items-center justify-center sm:flex-row sm:bg-none;
+    }
+
+    .about-hero-section {
+        @apply relative h-[35vh] sm:h-[55vh] w-full bg-cover bg-center flex items-center justify-center sm:flex-row sm:bg-none;
+    }
+
+    .hero-text {
+        @apply z-10 text-white p-6 text-center sm:text-left sm:w-1/2 sm:bg-black sm:flex sm:items-center sm:justify-center sm:h-full;
+    }
+
+    .about-hero-text {
+        @apply flex flex-col text-center
+    }
+
+    .grid-container {
+        @apply grid grid-cols-1 gap-4 p-4 mx-auto sm:grid-cols-2;
+    }
+
+    .grid-item {
+        @apply bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 hover:shadow-2xl;
+    }
+
+    .grid-text {
+        @apply sm:flex flex-col justify-center;
+    }
+
+    .footer {
+        @apply border-t-1 border-black my-10 p-5;
+    }
+}
+
+/* ========== Utility Styles ========== */
+@layer utilities {
+    .overlay {
+        @apply absolute h-full inset-0 bg-black opacity-70 sm:hidden;
+    }
+
+    .spacer {
+        @apply h-[6rem] sm:h-0;
+    }
+
+    .centered-text {
+        @apply m-3 p-1 text-xl text-center border rounded-lg shadow-2xl bg-black opacity-90 text-white font-extralight sm:font-semibold sm:text-2xl;
+    }
+}
+
+/* ========== Form Styles ========== */
+
+/* Form Wrapper */
+.form-wrapper {
+    @apply bg-gray-100 flex items-center justify-center min-h-screen mt-[10vh] p-5;
+}
+
+/* Form Container */
+.form-container {
+    @apply bg-white shadow-lg rounded-lg p-6 sm:p-10 w-full max-w-lg;
+}
+
+/* Section Titles */
+.form-title {
+    @apply text-lg font-semibold text-gray-700 mt-5 mb-3;
+}
+
+/* Labels */
+label {
+    @apply block text-sm font-medium text-gray-600 mt-2;
+}
+
+/* Input Fields */
+.form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black;
+}
+
+/* Select Fields */
+.form-select {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-black;
+}
+
+/* Textarea */
+.form-textarea {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-black;
+}
+
+/* Submit Button */
+.form-btn {
+    @apply w-full bg-black text-white font-bold py-3 mt-5 rounded-md hover:bg-black transition duration-300;
+}
+
+
+
+/* @theme {
+} */

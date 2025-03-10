@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="./10LivingFavicon.ico">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>10LIVING Lifestyle - Contact Us</title>
+</head>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-title"><a href="./"><img class="w-fit h-fit"
+                src="./images/10LivingLogoHeaderInvertedNoBg-Copy.png" alt=""></a></div>
+    <div class="nav-links">
+        <a class="nav-link" href="./">Home</a>
+        <a class="nav-link" href="./about.html">About Us</a>
+        <a class="nav-link overline" href="./contact.html">Contact Us</a>
+    </div>
+</nav>
+
+<!-- Spacer to prevent overlap -->
+<div class="spacer"></div>
+
+
+<body>
+    <div class="form-wrapper">
+
+        <div class="form-container bg-white shadow-lg rounded-lg p-6 sm:p-10 w-full max-w-lg">
+            <h2 class="text-2xl font-bold text-gray-800 text-center">Experience the 10Living Lifestyle</h2>
+            <p class="text-gray-600 text-center mt-2">Join the waitlist for our next available apartment curated just
+                for
+                you.</p>
+
+            <form action="https://formsubmit.co/yourmail@gmail.com" method="POST" class="mt-5">
+                <!-- Contact Information -->
+                <fieldset>
+                    <legend class="form-title">Contact Information</legend>
+                    <label for="full-name">Full Name (required)</label>
+                    <input type="text" id="full-name" name="full-name" required class="form-input">
+
+                    <label for="email">Email Address (required)</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" id="phone" name="phone" class="form-input">
+                </fieldset>
+
+                <!-- Apartment Preferences -->
+                <fieldset>
+                    <legend class="form-title">Apartment Preferences</legend>
+                    <label for="bedrooms">Number of Bedrooms</label>
+                    <select id="bedrooms" name="bedrooms" required class="form-select">
+                        <option value="">Select...</option>
+                        <option value="Studio">Studio</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+
+                    <label for="type">Apartment Type</label>
+                    <select id="type" name="type" required class="form-select">
+                        <option value="">Select...</option>
+                        <option value="Furnished">Furnished</option>
+                        <option value="Unfurnished">Unfurnished</option>
+                        <option value="Doesn't matter">Doesn't matter</option>
+                    </select>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend class="form-title">Additional Information</legend>
+                    <label for="hear-about">How did you hear about us?</label>
+                    <select id="hear-about" name="hear-about" required class="form-select">
+                        <option value="">Select...</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Online Search">Online Search</option>
+                        <option value="Referral">Referral</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="amenities">Any specific amenities or features you're looking for?</label>
+                    <textarea id="amenities" name="amenities" placeholder="Example: Gym, rooftop, coworking space..."
+                        class="form-textarea"></textarea>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit" class="form-btn">Join Waitlist</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Waitlist | 10Living</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #007BFF;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Experience the 10Living Lifestyle</h2>
+        <p>Join the waitlist for our next available apartment curated just for you.</p>
+
+        <form action="https://formsubmit.co/yourmail@gmail.com" method="POST">
+
+            <fieldset>
+                <legend><strong>Contact Information</strong></legend>
+                <label for="full-name">Full Name (required)</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address (required)</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone">
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Apartment Preferences</strong></legend>
+                <label for="bedrooms">Number of Bedrooms</label>
+                <select id="bedrooms" name="bedrooms" required>
+                    <option value="">Select...</option>
+                    <option value="Studio">Studio</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                </select>
+
+                <label for="type">Apartment Type</label>
+                <select id="type" name="type" required>
+                    <option value="">Select...</option>
+                    <option value="Furnished">Furnished</option>
+                    <option value="Unfurnished">Unfurnished</option>
+                    <option value="Doesn't matter">Doesn't matter</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Additional Information</strong></legend>
+                <label for="hear-about">How did you hear about us?</label>
+                <select id="hear-about" name="hear-about" required>
+                    <option value="">Select...</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Online Search">Online Search</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="amenities">Any specific amenities or features you're looking for?</label>
+                <textarea id="amenities" name="amenities"
+                    placeholder="Example: Gym, rooftop, coworking space..."></textarea>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Join Waitlist</button>
+        </form>
+    </div>
+
+</body>
+
+</html> -->
