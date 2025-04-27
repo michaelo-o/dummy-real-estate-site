@@ -1,9 +1,10 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Radley:ital@0;1&family=Young+Serif&display=swap');
 
 /* ========== Base Styles ========== */
 @layer base {
     body {
-        @apply bg-gray-100;
+        @apply bg-gray-100 font-mono;
     }
 
     h1,
