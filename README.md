@@ -1,2 +1,1 @@
-# 10living-lifestyle
-10LIVING Website
+# Dummy Real Estate Site by Michael Okwuosah
